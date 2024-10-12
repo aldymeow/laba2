@@ -4,7 +4,4 @@ def book_list(books, func):
         
 books = ['Мастер и маргарита','Преступление и наказание','Идиот']
 
-def book_print(book):
-    return book.upper() + ' - прочитано'
-
-book_list(books, book_print)
+book_list(books, lambda book: book.upper() + ' - прочитано')
