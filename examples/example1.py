@@ -1,6 +1,4 @@
 def example():
-    return True
+    print ('Ассаламу Алейкум, дон (с) Кадыров Р.А.')
 
-example = example()
-print (type(example))
-print(example)
+example()
