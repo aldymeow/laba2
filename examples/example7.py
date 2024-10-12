@@ -1,5 +1,5 @@
-def outer(out_param):
-    def inner(in_param):
-        return f'Odin v pole: {in_param}'
-    return inner(out_param)
-print(outer('voin'))
+def outer(out_param1, out_param2):
+    def inner(in_param1, in_param2):
+        return in_param1 + in_param2
+    return inner(out_param1, out_param2)
+print(outer(5,5))
