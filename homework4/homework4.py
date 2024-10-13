@@ -8,5 +8,18 @@ def find_multiples(x):
             multiples.append(n)
     return multiples
 
-x = int(input("Введите число X: "))
-print(find_multiples(x))
+def main():
+    try:
+        x = int(input("Введите число X (от 1 до 9): "))
+        if x < 1 or x > 9:
+            print("Пожалуйста, введите цифру от 1 до 9.")
+            return
+    except ValueError:
+        print("Пожалуйста, введите целое число.")
+        return
+
+    result = find_multiples(x)
+    print(f"Числа, кратные {x}: {result}")
+
+
+main()
